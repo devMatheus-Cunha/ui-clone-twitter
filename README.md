@@ -19,8 +19,8 @@ This project was developed with the following technologies:
 Clone the project and access the project folder.
 
 ```bash
-$ git clone https://github.com/rocketseat-education/nlw-06-reactjs
-$ cd letmeask
+$ git clone https://github.com/devMatheus-Gomes/ui-clone-twitter.git
+$ cd ui-clone-twitter
 ```
 
 To start it, follow the steps below:
