@@ -63,7 +63,25 @@ export const BackIcon = styled(ArrowLeft)`
   fill: var(--twitter);
 `;
 
-export const BottonMenu = styled.div``;
+export const BottonMenu = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  background: var(--primary);
+  border-top: 1px solid var(--outline);
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px min(46px, max(10vh, 10px));
+
+  @media (min-width:500px){
+    display: none;
+  }
+`;
 
 const iconCSS = css`
   width: 31px;
@@ -73,7 +91,7 @@ const iconCSS = css`
   fill: var(--gray);
 
   &:hover,
-  &:active {
+  &.active {
     fill: var(--twitter);
   }
 `;
