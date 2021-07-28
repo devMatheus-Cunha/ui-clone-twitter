@@ -1,5 +1,11 @@
-import styled from 'styled-components';
-import { ArrowLeft } from '../../styles/Icons';
+import styled, { css } from 'styled-components';
+import {
+  ArrowLeft,
+  Home,
+  Search,
+  Notifications,
+  Email,
+} from '../../styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -34,13 +40,6 @@ export const Header = styled.div`
   }
 `;
 
-export const BackIcon = styled(ArrowLeft)`
-  width: 24px;
-  height: 24px;
-
-  fill: var(--twitter);
-`;
-
 export const ProfileInfo = styled.div`
   margin-left: 17px;
 
@@ -51,8 +50,46 @@ export const ProfileInfo = styled.div`
     font-size: 19px;
   }
 
-  > span{
+  > span {
     font-size: 15px;
     color: var(--gray);
   }
+`;
+
+export const BackIcon = styled(ArrowLeft)`
+  width: 24px;
+  height: 24px;
+
+  fill: var(--twitter);
+`;
+
+export const BottonMenu = styled.div``;
+
+const iconCSS = css`
+  width: 31px;
+  height: 31px;
+
+  cursor: pointer;
+  fill: var(--gray);
+
+  &:hover,
+  &:active {
+    fill: var(--twitter);
+  }
+`;
+
+export const HomeIcon = styled(Home)`
+  ${iconCSS}
+`;
+
+export const SearchIcon = styled(Search)`
+  ${iconCSS}
+`;
+
+export const BellIcon = styled(Notifications)`
+  ${iconCSS}
+`;
+
+export const EmailIcon = styled(Email)`
+  ${iconCSS}
 `;
