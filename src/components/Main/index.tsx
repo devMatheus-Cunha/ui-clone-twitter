@@ -1,5 +1,9 @@
 import React from 'react';
 
+// components 
+import ProfilePage from '../ProfilePage'
+
+// styles 
 import { Container, Header, BackIcon, ProfileInfo,BottonMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles';
 
 const Main: React.FC = () => {
@@ -14,7 +18,7 @@ const Main: React.FC = () => {
           <span>190 Tweets</span>
         </ProfileInfo>
       </Header>
-      {/* <ProfilePage /> */}
+      <ProfilePage />
 
       <BottonMenu>
         <HomeIcon className="active" />
