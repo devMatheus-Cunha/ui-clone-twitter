@@ -22,8 +22,61 @@ export const Banner = styled.div`
   background-color: var(--twitter);
   position: relative;
 `;
-export const Avatar = styled.div``;
-export const ProfileData = styled.div``;
+export const Avatar = styled.div`
+  width: max(45px, min(135px, 22vw));
+  height: max(45px, min(135px, 22vw));
+
+  border: 3.75px solid var(--primary);
+  background: var(--gray);
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: max(-60px, -10vh);
+  left: 15px;
+`;
+export const ProfileData = styled.div`
+  padding: min(calc(10vh + 7px), 67px) 16px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  > h1 {
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  > h2 {
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--gray);
+  }
+
+  > p {
+    font-size: 15px;
+    margin-top: 11px;
+
+    > strong {
+      color: var(--twitter);
+    }
+  }
+
+  > ul {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    > li {
+      font-size: 15px;
+      color: var(--gray);
+      > svg {
+        fill: var(--gray);
+        margin-right: 5px;
+      }
+    }
+  }
+`;
 export const Followage = styled.div``;
 
 const icoCSS = css`
