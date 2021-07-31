@@ -6,6 +6,9 @@ import Main from '../Main';
 // styles
 import { Container, Wrapper } from './styles';
 
+// ----------------
+// Export function
+// ----------------
 const Layout: React.FC = () => {
   return (
     <Container>

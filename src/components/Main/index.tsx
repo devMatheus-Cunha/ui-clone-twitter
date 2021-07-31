@@ -6,6 +6,9 @@ import ProfilePage from '../ProfilePage'
 // styles 
 import { Container, Header, BackIcon, ProfileInfo,BottonMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles';
 
+// ----------------
+// Export function
+// ----------------
 const Main: React.FC = () => {
   return (
     <Container>

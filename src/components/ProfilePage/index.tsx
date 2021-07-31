@@ -1,5 +1,6 @@
 import React from 'react';
 
+// styles
 import {
   Container,
   Banner,
@@ -11,6 +12,10 @@ import {
   EditButton,
 } from './styles';
 
+
+// ----------------
+// Export function
+// ----------------
 const ProfilePage: React.FC = () => {
   return (
     <Container>
