@@ -1,5 +1,6 @@
 import React from 'react';
 
+// components
 import Feed from '../Feed'
 
 // styles
