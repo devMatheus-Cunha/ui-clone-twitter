@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Feed from '../Feed'
+
 // styles
 import {
   Container,
@@ -51,6 +53,7 @@ const ProfilePage: React.FC = () => {
           </span>
         </Followage>
       </ProfileData>
+      <Feed />
     </Container>
   );
 };
