@@ -13,14 +13,14 @@ export const Tab = styled.div`
   font-weight: bold;
   font-size: 15px;
 
-  outline: none;
+  outline: 0;
   cursor: pointer;
 
   color: var(--twitter);
   border-bottom: 2px solid var(--twitter);
 
   &:hover {
-    background-color: var(--twitter-dark-hover);
+    background: var(--twitter-dark-hover);
   }
 `;
 
