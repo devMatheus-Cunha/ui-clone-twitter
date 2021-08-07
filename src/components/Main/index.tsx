@@ -1,14 +1,19 @@
 import React from 'react';
 
-// components 
-import ProfilePage from '../ProfilePage'
+import ProfilePage from '../ProfilePage';
 
-// styles 
-import { Container, Header, BackIcon, ProfileInfo,BottonMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles';
+import {
+  Container,
+  Header,
+  BackIcon,
+  ProfileInfo,
+  BottomMenu,
+  HomeIcon,
+  SearchIcon,
+  BellIcon,
+  EmailIcon,
+} from './styles';
 
-// ----------------
-// Export function
-// ----------------
 const Main: React.FC = () => {
   return (
     <Container>
@@ -16,19 +21,21 @@ const Main: React.FC = () => {
         <button>
           <BackIcon />
         </button>
+
         <ProfileInfo>
           <strong>Matheus Gomes</strong>
-          <span>190 Tweets</span>
+          <span>612 Tweets</span>
         </ProfileInfo>
       </Header>
+
       <ProfilePage />
 
-      <BottonMenu>
+      <BottomMenu>
         <HomeIcon className="active" />
         <SearchIcon />
         <BellIcon />
         <EmailIcon />
-      </BottonMenu>
+      </BottomMenu>
     </Container>
   );
 };
