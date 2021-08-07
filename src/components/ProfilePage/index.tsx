@@ -1,24 +1,18 @@
 import React from 'react';
 
-// components
-import Feed from '../Feed'
+import Feed from '../Feed';
 
-// styles
 import {
   Container,
   Banner,
   Avatar,
   ProfileData,
-  LocationIcons,
+  LocationIcon,
   CakeIcon,
   Followage,
   EditButton,
 } from './styles';
 
-
-// ----------------
-// Export function
-// ----------------
 const ProfilePage: React.FC = () => {
   return (
     <Container>
@@ -27,33 +21,36 @@ const ProfilePage: React.FC = () => {
       </Banner>
 
       <ProfileData>
-        <EditButton outlined>Editar Perfil</EditButton>
+        <EditButton outlined>Editar perfil</EditButton>
 
         <h1>Matheus Gomes</h1>
-        <h2>@mthgomess</h2>
+        <h2>@</h2>
 
-        <p>Developer at <strong>Seidor</strong></p>
+        <p>
+          Developer at <a href="https://rocketseat.com.br">@Rocketseat</a>
+        </p>
 
         <ul>
           <li>
-            <LocationIcons />
-            Minas Gerais, Brasil
+            <LocationIcon />
+            São Paulo, Brasil
           </li>
           <li>
             <CakeIcon />
-            Nascido(a) em 19 de agosto de 2000
+            Nascido(a) em 21 de junho de 2001
           </li>
         </ul>
 
         <Followage>
           <span>
-            Seguindo <strong>47</strong>
+            seguindo <strong>94</strong>
           </span>
           <span>
-            Seguidores <strong>1633</strong>
+            <strong>672 </strong> seguidores
           </span>
         </Followage>
       </ProfileData>
+
       <Feed />
     </Container>
   );
