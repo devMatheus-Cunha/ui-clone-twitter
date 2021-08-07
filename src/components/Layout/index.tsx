@@ -1,21 +1,18 @@
 import React from 'react';
 
-// components
+import MenuBar from '../MenuBar';
 import Main from '../Main';
+import SideBar from '../SideBar';
 
-// styles
 import { Container, Wrapper } from './styles';
 
-// ----------------
-// Export function
-// ----------------
 const Layout: React.FC = () => {
   return (
     <Container>
       <Wrapper>
-        {/* <MenuBar /> */}
+        <MenuBar />
         <Main />
-        {/* <Sidebar /> */}
+        <SideBar />
       </Wrapper>
     </Container>
   );
