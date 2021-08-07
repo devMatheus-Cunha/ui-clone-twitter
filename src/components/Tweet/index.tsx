@@ -24,7 +24,8 @@ const Tweet: React.FC = () => {
       <Retweeted>
         <RocketseatIcon />
         Você retweetou
-      </Reteweeted>
+      </Retweeted>
+
       <Body>
         <Avatar />
 
@@ -35,7 +36,9 @@ const Tweet: React.FC = () => {
             <Dot />
             <time>27 de jun</time>
           </Header>
-          <Description>Foguete não tem ré</Description>
+
+          {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
+          <Description>Foguete não tem ré 🚀</Description>
 
           <ImageContent />
 
@@ -44,12 +47,10 @@ const Tweet: React.FC = () => {
               <CommentIcon />
               18
             </Status>
-
             <Status>
               <RetweetIcon />
-              17
+              18
             </Status>
-
             <Status>
               <LikeIcon />
               999
